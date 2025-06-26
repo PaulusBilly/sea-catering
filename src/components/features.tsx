@@ -17,7 +17,7 @@ const featureDetails = [
 
 export default function Features() {
   return (
-    <section className="bg-muted/50 py-16">
+    <section className="flex justify-center">
       <div className="container">
         <h3 className="mb-10 text-center text-2xl font-bold">Why Choose Us?</h3>
 

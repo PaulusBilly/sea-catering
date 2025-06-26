@@ -17,9 +17,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur">
-      <div className="container flex h-16 items-center justify-between">
-        <h1 className="ml-10 font-semibold text-lg">SEA Catering</h1>
+    <nav className="sticky top-0 z-50 w-full backdrop-blur flex justify-center">
+      <div className="ml-30 mr-30 container flex h-16 items-center justify-between">
+        <h1 className="font-semibold text-lg">SEA Catering</h1>
         <NavigationMenu>
           <NavigationMenuList className="hidden gap-5 md:flex">
             {links.map((l) => (
