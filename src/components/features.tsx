@@ -17,17 +17,22 @@ const featureDetails = [
 
 export default function Features() {
   return (
-    <section>
-      <div>
-        <h3>Why Choose Us?</h3>
+    <section className="bg-muted/50 py-16">
+      <div className="container">
+        <h3 className="mb-10 text-center text-2xl font-bold">Why Choose Us?</h3>
 
-        <div>
+        <div className="container gap-8 flex justify-center">
           {featureDetails.map((f) => (
-            <Card key={f.title}>
+            <Card
+              key={f.title}
+              className="transition-all hover:shadow-lg max-w-80 h-70"
+            >
               <CardHeader>
                 <CardTitle>{f.title}</CardTitle>
               </CardHeader>
-              <CardContent>{f.description}</CardContent>
+              <CardContent className="text-sm text-muted-foreground">
+                {f.description}
+              </CardContent>
             </Card>
           ))}
         </div>

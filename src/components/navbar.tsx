@@ -17,16 +17,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav>
-      <div>
-        <h1>SEA Catering</h1>
+    <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur">
+      <div className="container flex h-16 items-center justify-between">
+        <h1 className="ml-10 font-semibold text-lg">SEA Catering</h1>
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList className="hidden gap-5 md:flex">
             {links.map((l) => (
               <NavigationMenuItem key={l.href}>
-                <Link href={l.href} passHref>
-                  <NavigationMenuLink>{l.label}</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild>
+                  <Link href={l.href}>{l.label}</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
