@@ -16,5 +16,22 @@ export default function Navbar() {
     { href: "/contact", label: "Contact" },
   ];
 
-  return <nav></nav>;
+  return (
+    <nav>
+      <div>
+        <h1>SEA Catering</h1>
+        <NavigationMenu>
+          <NavigationMenuList>
+            {links.map((l) => (
+              <NavigationMenuItem key={l.href}>
+                <Link href={l.href} passHref>
+                  <NavigationMenuLink>{l.label}</NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+    </nav>
+  );
 }

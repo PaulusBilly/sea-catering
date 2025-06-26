@@ -1,5 +1,13 @@
-import Image from "next/image";
-
 export default function Hero() {
-  return <section></section>;
+  return (
+    <section>
+      <div>
+        <h2>Healthy Meals, Anytime, Anywhere</h2>
+        <p>
+          SEA Catering delivers fresh, customizable meal plans straight to your
+          doorstep anywhere in Indonesia
+        </p>
+      </div>
+    </section>
+  );
 }
