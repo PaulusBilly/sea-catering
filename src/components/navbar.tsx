@@ -57,7 +57,7 @@ export default function Navbar() {
           </Dialog.Portal>
         </Dialog.Root>
 
-        <h1 className="absolute left-1/2 -translate-x-1/2 font-bold text-2xl md:relative md:left-0 md:translate-x-0">
+        <h1 className="absolute left-1/2 -translate-x-1/2 font-bold text-2xl md:relative md:ml-30 md:left-0 md:translate-x-0">
           SEA Catering
         </h1>
 
